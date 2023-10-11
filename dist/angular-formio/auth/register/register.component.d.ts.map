@@ -1,0 +1,1 @@
+{"version":3,"file":"register.component.d.ts","sourceRoot":"","sources":["../../../../projects/angular-formio/auth/src/register/register.component.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,iBAAiB,EAAE,MAAM,iBAAiB,CAAC;;AACpD,qBAGa,2BAA2B;IAInB,OAAO,EAAE,iBAAiB;IAHtC,aAAa,EAAE,GAAG,CAEvB;gBACiB,OAAO,EAAE,iBAAiB;yCAJlC,2BAA2B;2CAA3B,2BAA2B;CAKvC"}
