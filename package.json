@@ -1,0 +1,73 @@
+{
+  "name": "@formio/angular",
+  "version": "6.5.0",
+  "scripts": {
+    "ng": "ng",
+    "build": "ng build angular-formio",
+    "build:watch": "ng build angular-formio --watch",
+    "build:prod": "ng build angular-formio --configuration production",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n angular-formio -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "publish": "npm run build:prod && npm publish ./dist/angular-formio --tag=a16-rc",
+    "publish:latest": "npm run build:prod && npm publish ./dist/angular-formio",
+    "test": "ng test",
+    "lint": "ng lint",
+    "postinstall": "node -e 'var fs=require(`fs`);var fname=`./projects/angular-formio/package.json`;var pjson=require(fname);pjson.version=require(`./package.json`).version;fs.writeFileSync(fname,JSON.stringify(pjson,null, 2))'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/formio/angular-formio"
+  },
+  "author": {
+    "name": "Travis Tidwell",
+    "email": "travis@form.io"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/formio/angular-formio/issues"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.0.5",
+    "@angular/animations": "^16.0.4",
+    "@angular/cli": "^16.0.5",
+    "@angular/common": "^16.0.4",
+    "@angular/compiler": "^16.0.4",
+    "@angular/compiler-cli": "^16.0.4",
+    "@angular/core": "^16.0.4",
+    "@angular/forms": "^16.0.4",
+    "@angular/platform-browser": "^16.0.4",
+    "@angular/platform-browser-dynamic": "^16.0.4",
+    "@angular/router": "^16.0.4",
+    "@compodoc/compodoc": "^1.1.21",
+    "@formio/js": "^5.0.0-rc.34",
+    "@types/jasmine": "^4.3.2",
+    "@types/jasminewd2": "^2.0.10",
+    "@types/node": "^20.2.5",
+    "codelyzer": "^6.0.2",
+    "jasmine-core": "^5.0.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "karma": "^6.4.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
+    "ng-packagr": "^16.0.1",
+    "ngx-bootstrap": "^10.2.0",
+    "protractor": "~7.0.0",
+    "replace-in-file": "^7.0.1",
+    "rxjs": "^7.8.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.3",
+    "tslint": "~6.1.0",
+    "typescript": "~5.0.0",
+    "zone.js": "^0.13.0"
+  }
+}
